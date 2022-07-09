@@ -18,6 +18,11 @@
   "author": "milan",
   "license": "ISC",
   "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
+    "@mantine/core": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
+    "@mantine/next": "^4.2.12",
+    "axios": "^0.27.2",
     "next": "^12.2.2",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
