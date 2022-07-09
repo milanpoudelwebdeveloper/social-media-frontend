@@ -1,0 +1,7 @@
+.home {
+  position: relative;
+  display: grid;
+  /* left-side-profile will have width: 18rem, center-posts will have width auto and right side will have 20rem;*/
+  grid-template-columns: 18rem auto 20rem;
+  gap: 1rem;
+}
