@@ -25,7 +25,9 @@ const PostCard: React.FC<props> = ({
         <img src="/images/comment.png" />
         <img src="/images/share.png" />
       </div>
-      <span>{likes} likes</span>
+      <span style={{ fontSize: '14px', color: 'var(--gray)' }}>
+        {likes} likes
+      </span>
       <div className={styles.postDetails}>
         <span>
           <b>{name}</b>

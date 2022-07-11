@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ProfileCard.module.css'
 
 const ProfileCard = () => {
+  const profilePage = true
   return (
     <div className={styles.profileCard}>
       <div className={styles.profileImages}>
@@ -24,10 +25,19 @@ const ProfileCard = () => {
             <span>1,000</span>
             <span>followings</span>
           </div>
+          {profilePage && (
+            <>
+              <div className={styles.verticalLine}></div>
+              <div className={styles.follow}>
+                <span>3</span>
+                <span>Posts</span>
+              </div>
+            </>
+          )}
         </div>
         <hr />
       </div>
-      <span>My Profile</span>
+      {!profilePage && <span>My Profile</span>}
     </div>
   )
 }
