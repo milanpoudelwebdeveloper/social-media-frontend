@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './ProfileCard.module.css'
 
 const ProfileCard = () => {
-  const profilePage = true
+  const profilePage = false
   return (
     <div className={styles.profileCard}>
       <div className={styles.profileImages}>

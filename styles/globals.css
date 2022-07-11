@@ -69,3 +69,69 @@ button:hover {
   grid-template-columns: 20rem auto 20rem;
   gap: 1rem;
 }
+
+.auth {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  gap: 4rem;
+}
+
+.auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-left {
+  gap: 2rem;
+}
+
+.a-left > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.appDesc > h1 {
+  font-size: 3rem;
+  /* give background-color: */
+  background-color: red;
+  /* then set the gradient */
+  background-image: var(--buttonBg);
+
+  /* set the background size and repeat properties */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.appDesc > h6 {
+  font-size: 0.85rem;
+}
+
+.a-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm {
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
