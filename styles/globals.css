@@ -1,0 +1,137 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --schedule: #e1ae4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  overflow: hidden;
+  color: var(--black);
+  background: #f3f3f3;
+  padding: 1rem 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(72px);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+button:hover {
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.profile {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20rem auto 20rem;
+  gap: 1rem;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  gap: 4rem;
+}
+
+.auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-left {
+  gap: 2rem;
+}
+
+.a-left > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.appDesc > h1 {
+  font-size: 3rem;
+  /* give background-color: */
+  background-color: red;
+  /* then set the gradient */
+  background-image: var(--buttonBg);
+
+  /* set the background size and repeat properties */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.appDesc > h6 {
+  font-size: 0.85rem;
+}
+
+.a-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm {
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
